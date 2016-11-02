@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <title>Document</title>
+</head>
+<body>
+    <svg width="500" height="500">
+    
+    <circle cx="100" cy="100" r="50" stroke="#ccc" stroke-width="3" fill="blue" />
+
+    <circle cx="100" cy="100" r="50" stroke="#ccc" stroke-width="3" fill="blue" />
+  </svg>
+    <script type="text/javascript">
+        d3.csv("Travels.csv", function(data) {
+        	console.log(data);
+        	var parsedCSV = d3.csv.parseRows(data);
+        	console.log(parsedCSV);
+        });
+    </script> 
+</body>
+</html>
